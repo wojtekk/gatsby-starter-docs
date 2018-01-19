@@ -2,7 +2,7 @@
     <img src="static/logos/logo-1024.png" alt="Logo" width='100px' height='100px'/>
 </div>
 
-# Gatsby Docs Starter 
+# Gatsby Docs Starter
 
 #### This Project was forked from [Gatsby Advanced Starter](https://github.com/Vagr9K/gatsby-advanced-starter)
 
@@ -26,17 +26,20 @@ This template provides everything but the content. You could just write all your
 ### New Features
 
 * Basic UI
+* Mobile responsive.
 * Styled Components CSS w/ ThemeProvider for easy cross-site UI changes.
 * Custom code-highlight theme
 * React Icons
 * Configured to auto generate documentation 'Table of Contents' - you just need to follow the file frontmatter conventions in the 'lessons' folder.
 * You can also have blog posts.
+* Mobile Responsive
 
 ### Updates
 
-* December 23, 2017 - The 'Docs' page is now mobile responsive.
+* December 23, 2017 - The 'Docs' page is now mobile responsive. **This was a hotfix**, and it needs to be improved upon.
 
-### These are the features from [Gatsby Advanced Starter](https://github.com/Vagr9K/gatsby-advanced-starter), which remain:  
+### These are the features from [Gatsby Advanced Starter](https://github.com/Vagr9K/gatsby-advanced-starter), which remain:
+
 * Blazing fast loading times thanks to pre-rendered HTML and automatic chunk loading of JS files
 * Separate components for everything
 * High configurability:
@@ -88,11 +91,11 @@ This template provides everything but the content. You could just write all your
   * gh-pages for deploying to GitHub pages
   * CodeClimate configuration file and badge
 
-*** 
+---
 
 ### Notes
- [Ruben Harutyunyan](https://github.com/Vagr9K) did most of the hard work with [Gatsby Advanced Starter](https://github.com/Vagr9K/gatsby-advanced-starter).
- The rest of the credit is due to [Gatsby](https://github.com/gatsbyjs/gatsby/).
- 
 
- WARNING: Make sure to edit `static/robots.txt` to include your domain for the sitemap!
+[Ruben Harutyunyan](https://github.com/Vagr9K) did most of the hard work with [Gatsby Advanced Starter](https://github.com/Vagr9K/gatsby-advanced-starter).
+The rest of the credit is due to [Gatsby](https://github.com/gatsbyjs/gatsby/).
+
+WARNING: Make sure to edit `static/robots.txt` to include your domain for the sitemap!

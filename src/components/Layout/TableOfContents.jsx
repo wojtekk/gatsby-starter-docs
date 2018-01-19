@@ -1,6 +1,7 @@
 import React from "react"
 import Link from 'gatsby-link'
 import styled from 'styled-components'
+import UserLinks from "../UserLinks";
 
 
 // This class should not be used for listing posts, but for chapter based Docs. See PostListing for that.
@@ -74,11 +75,17 @@ class TableOfContents extends React.Component {
 
   render() {
     return (
-      <TableOfContentsContainer>
-        <ul>
-          {this.nodeListItems()}
-        </ul>
-      </TableOfContentsContainer>
+      <div>
+        <TableOfContentsContainer>
+          <ul>
+            {this.nodeListItems()}
+          </ul>
+        </TableOfContentsContainer>
+        <LinksContainer>
+          <UserLinks />
+        </LinksContainer>
+      </div>
+
     )
   }
 }
@@ -103,6 +110,18 @@ const TableOfContentsContainer = styled.div`
      color: ${props => props.theme.brand};
      margin-bottom: 10px;
   }
+`
+
+
+const LinksContainer = styled.div`
+  display: none;
+  background: black;
+  
+  @media screen and (max-width: 600px) {
+      background: black;
+      display: inline;
+      margin: auto;
+    }
 `
 
 const LessonContainer = styled.div`

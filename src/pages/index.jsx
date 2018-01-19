@@ -1,16 +1,15 @@
-import React from "react"
-import Helmet from "react-helmet"
-import styled from "styled-components"
+import React from 'react'
+import Helmet from 'react-helmet'
+import styled from 'styled-components'
 
-import SEO from "../components/SEO/SEO"
-import config from "../../data/SiteConfig"
+import SEO from '../components/SEO/SEO'
+import config from '../../data/SiteConfig'
 import MainHeader from '../components/Layout/Header'
 import CtaButton from '../components/CtaButton'
 
 class Index extends React.Component {
-
   render() {
-    const postEdges = this.props.data.allMarkdownRemark.edges;
+    const postEdges = this.props.data.allMarkdownRemark.edges
     return (
       <div className="index-container">
         <Helmet title={config.siteTitle} />
@@ -24,23 +23,31 @@ class Index extends React.Component {
           />
           <BodyContainer>
             <h2>A Gatsby Template for Content</h2>
-            <p>Made for modern documentation sites. Table of Contents automatically generated from markdown files. </p>
+            <p>
+              Made for modern documentation sites. Table of Contents
+              automatically generated from markdown files.{' '}
+            </p>
             <CtaButton to={'/lesson-one'}>See Your First Post</CtaButton>
+            <p>
+              Created by Eric Windmill.{' '}
+              <a href="https://twitter.com/ericwindmill">
+                You Should follow him on Twitter.
+              </a>
+            </p>
           </BodyContainer>
         </main>
       </div>
-    );
+    )
   }
 }
 
-export default Index;
+export default Index
 
 const BodyContainer = styled.div`
   padding: ${props => props.theme.sitePadding};
   max-width: ${props => props.theme.contentWidthLaptop};
   margin: 0 auto;
 `
-
 
 /* eslint no-undef: "off"*/
 export const pageQuery = graphql`
@@ -49,7 +56,7 @@ export const pageQuery = graphql`
       limit: 2000
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
-      edges { 
+      edges {
         node {
           fields {
             slug
@@ -66,4 +73,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`
